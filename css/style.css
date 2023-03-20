@@ -17,6 +17,10 @@
 .marg20 {margin-top: 20px;}
 .marg40 {margin-top: 40px;}
 
+.marg_bott10 {margin-bottom: 10px;}
+.marg_bott20 {margin-bottom: 20px;}
+.marg_bott40 {margin-bottom: 40px;}
+
 .padd10 {padding: 10px;}
 .padd20 {padding: 20px;}
 .padd40 {padding: 40px;}
@@ -77,7 +81,7 @@ header button:hover{
 
 /* header media query */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
     .right_navbar{
         display: block;
     }
@@ -93,6 +97,7 @@ header button:hover{
 
 .info_container{
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .info{
@@ -100,41 +105,84 @@ header button:hover{
     padding: 20px;
     padding-bottom: 0px;
     margin: 10px;
-    width: calc(100% / 3 - 20px);
     border-radius: 10px;
+    width: 100%;
+}
+
+.info_center{
+    text-align: center;
 }
 
 .info_grow{
-    width: calc(100% / 3 * 2 - 20px);
+    flex-direction: column;
+    align-items: center;
 }
 
 .left_info{
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .right_info{
-    max-width: 40%;
+    max-width: 100%;
 }
 
-.left_info h3{
+.info_container h3{
     color: #1a90fd;
+    font-size: 25px;
 }
 
-.left_info p{
+.info_container p{
     color: #617689;
 }
 
 .right_info img{
     display: block;
     max-width: 80%;
+    margin: auto;
 }
 
 .info button{
     color: white;
     background-color: #0084fd;
-    padding: 10px 40px;
+    padding: 10px 60px;
     border-radius: 20px;
     border: none;
     font-size: 18px;
+    margin-bottom: 20px;
+}
 
+.info button:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.paper{
+    color: #0084fd;
+    font-size: 4rem;
+}
+
+/* first section media query */
+
+@media screen and (min-width: 800px) {
+    .info_container{
+        flex-direction: row;
+    }
+
+    .info{
+        width: calc(100% / 3 - 20px);
+       }
+
+   .info_grow{
+    flex-direction: row;
+    width: calc(100% / 3 * 2 - 20px);
+
+   }
+
+   .left_info{
+    max-width: 60%;
+   }
+
+   .right_info{
+    max-width: 40%;
+   }
 }
