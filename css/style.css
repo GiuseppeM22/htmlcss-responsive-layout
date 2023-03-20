@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* classi riutilizzabili */
+
+.flex   {display: flex;}
+.boxed  {
+    width: 80%;
+    margin:auto;
+} 
+
+.marg10 {margin-top: 10px;}
+.marg20 {margin-top: 20px;}
+.marg40 {margin-top: 40px;}
+
+.padd10 {padding: 10px;}
+.padd20 {padding: 20px;}
+.padd40 {padding: 40px;}
+
+.line2  {line-height: 2em;}
+.line3  {line-height: 3em;}
+.line4  {line-height: 4em;}
+
+
+/* header */
+
+header{
+    background-color: #0084fd;
+}
+
+.navbar{
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger{
+    cursor: pointer;
+    color:white;
+    font-size: 2rem;
+}
+
+.right_navbar{
+    display: none;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+header a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+header button{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+}
+
+header button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* header media query */
+
+@media screen and (min-width: 900px) {
+    .right_navbar{
+        display: block;
+    }
+
+    .hamburger{
+        display: none;
+    }
+}
+
+/* main */
+
+/* main first section */
+
+.info_container{
+    flex-wrap: wrap;
+}
+
+.info{
+    background-color: #b5ddff;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
+    border-radius: 10px;
+}
+
+.info_grow{
+    width: calc(100% / 3 * 2 - 20px);
+}
+
+.left_info{
+    max-width: 60%;
+}
+
+.right_info{
+    max-width: 40%;
+}
+
+.left_info h3{
+    color: #1a90fd;
+}
+
+.left_info p{
+    color: #617689;
+}
+
+.right_info img{
+    display: block;
+    max-width: 80%;
+}
+
+.info button{
+    color: white;
+    background-color: #0084fd;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+
+}
