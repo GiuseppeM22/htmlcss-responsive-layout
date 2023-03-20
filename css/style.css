@@ -186,3 +186,71 @@ header button:hover{
     max-width: 40%;
    }
 }
+
+/* main second section */
+.bg_violet{
+    background-color: #9792e4;
+}
+
+.planning{
+    flex-direction: column;
+}
+
+.planning_left, .planning img{
+    max-width: 100%;
+    padding: 40px;
+}
+
+.planning_left h4{
+    color: white;
+    font-size: 40px;
+}
+
+.planning_left p{
+    color: white;
+}
+
+.planning_right{
+    background-color: white;
+    border-radius: 50px;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planning_right h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.planning_right p{
+    text-align: center;
+    padding: 20px;
+    line-height: 2em;
+}
+
+.planning_right .arrow{
+    background-color: #9792e4;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* second section media query */
+
+@media screen and (min-width: 800px) {
+    .planning{
+        flex-direction: row;
+    }
+
+    .planning_left{
+        width: 50%;
+    }
+
+    .planning_right{
+        width: 30%;
+        margin-bottom: 40px;
+    }
+}
