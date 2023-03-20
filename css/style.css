@@ -194,6 +194,7 @@ header button:hover{
 
 .planning{
     flex-direction: column;
+    padding-bottom: 40px;
 }
 
 .planning_left, .planning img{
@@ -251,6 +252,76 @@ header button:hover{
 
     .planning_right{
         width: 30%;
+        padding-top: 0px;
         margin-bottom: 40px;
     }
+}
+
+/* main third section */
+.testimonials_up{
+    text-align: center;
+}
+
+.testimonials_up h5{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.testimonials_up h4 {
+    color: #9792e4;
+    font-size: 35px;
+    line-height: 1.5em;
+
+}
+
+.testimonials{
+    flex-direction: column;
+}
+
+.testimonials_down{
+    flex-direction: column;
+    background-color: #9792e4;
+    border-radius: 40px;
+    align-items: center;
+    padding: 30px;
+}
+
+.testimonials_down img{
+    border-radius: 50%;
+    max-width: 200px;
+    margin: auto;
+    margin: 20px;
+}
+
+.testimonials_down p{
+    text-align: center;
+    color: white;
+}
+
+.testimonials_down span{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+
+.column{
+    flex-direction: column;
+}
+
+/* third section media query */
+
+@media screen and (min-width: 800px) {
+    .testimonials_down{
+        flex-direction: row;
+
+    }
+
+    .column{
+        align-items: flex-start;
+    }
+
+    .testimonials_down p{
+        text-align: left;
+    }
+
 }
