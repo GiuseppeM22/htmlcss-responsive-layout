@@ -403,3 +403,139 @@ header button:hover{
         flex-wrap: wrap;
     }
 }
+
+/* main fiveth section */
+
+.about_us{
+    flex-direction: column;
+    padding: 20px;
+}
+
+.about_us h3{
+    color: #9792e4;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.about_us h4{
+    color: #9792e4;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.5em;
+}
+
+.about_us p{
+    color: #617689;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.about_us img{
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.about_us button{
+    border: none;
+    padding: 20px;
+    background-color: #9792e4;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+.about_us button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.right_about_us{
+    flex-direction: column;
+}
+
+/* fiveth section media query */
+
+@media screen and (min-width: 800px) {
+    .about_us{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .left_about_us{
+        max-width: 50%;
+    }
+
+    .right_about_us{
+        max-width: 30%;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* footer */
+
+.footer_up{
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer_up h5{
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+}
+
+.footer_up h4{
+    color: white;
+    font-size: 35px;
+    line-height: 1.5em;
+}
+
+.footer_up h3{
+    color: #fdc15f;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.footer_up p, .footer_up a{
+    color: white;
+    text-align: center;
+}
+
+.footer_up button{
+    color: #9792e4;
+    background-color: white;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.footer_up button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.footer_down_bg{
+    background-color: #333333;
+}
+
+.footer_down p{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.footer_down a{
+    color: #9792e4;
+}
+
+/* footer media query */
+
+@media screen and (min-width: 800px){
+    .footer_up, .footer_down{
+        max-width: 60%;
+        margin: auto;
+    }
+}
